@@ -31,12 +31,14 @@ void exercise_5(int n, int k) {
 }
 
 int exercise_6(int n) {
-  // TODO: YOUR CODE HERE
+  cin >> 
   return 0;
 }
 
 void exercise_7(int n) {
-  // TODO: YOUR CODE HERE
+  int number = 3;
+  double result;
+  for(int i = 1; i <= n; i++)
 }
 
 void exercise_8(string s) {
