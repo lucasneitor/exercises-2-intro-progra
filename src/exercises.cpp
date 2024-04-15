@@ -5,13 +5,13 @@
 using namespace std;
 
 void exercise_1(string s1) {
-  for(int i = 0; i <= str.size(); ++i){
-    if(str[i] == ' '){
-      cout << i << endl;
+    for(int i = 0; i <= str.size(); ++i){
+        if(str[i] == ' '){
+            cout << i << endl;
+        }
     }
-  }
-  cout << str.size() << endl;
-  return 0;
+    cout << str.size() << endl;
+
 }
 
 void exercise_2(string s1) {
