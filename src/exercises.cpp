@@ -249,17 +249,68 @@ string exercise_14(int n) {
 }
 
 void exercise_15(int decimal) {
-  // TODO: YOUR CODE HERE
+    cin >> decimal;
+      int b = 0;
+      int r;
+        for(int i = 0; decimal > 0; i ++){
+            r = decimal % 2;
+            decimal = decimal / 2;
+            b = b + r * pow(10,i);
+    }
+    cout << bin << endl;
 }
 
 void exercise_16(int divident, int divider) {
-  // TODO: YOUR CODE HERE
+    int c = 0;
+    int rest = divident;
+    int i = 0;
+        if(divider!=0){
+              for(i; rest-divider >= 0; ++i){
+                rest = rest - divider;
+            
+        }
+    c = i;
+    
+    cout << c << " ";
+    cout << rest << endl;
+    }
 }
 
 void exercise_17(int n) {
-  // TODO: YOUR CODE HERE
+    int i = 0; 
+    int  w = 2; 
+    
+    while (n > i) {
+        bool ep = true;
+        
+        for (int i = 2; i <= w/2; ++i) {
+            if (w % i == 0) {
+                ep = false;
+                break; 
+            }
+        }
+        
+        if (ep) {
+            cout << w << " "; 
+            ++i; 
+        }
+        
+        ++w; 
+    }
 }
 
 void exercise_18_19(int debut, int fin) {
-  // TODO: YOUR CODE HERE
+    int c = 0;
+    if (debut <= 0){
+        cout << "El numero debe de ser positivo y mayor a zero" << endl;
+    }
+    else if (debut > fin){
+        cout << "El numero de fin no debe de ser menor al inicial" << endl;
+    }
+    else{
+        for(int i = debut; i <= fin; i++){
+            cout << i << "->";
+            
+        }
+    }
 }
