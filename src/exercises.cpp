@@ -14,6 +14,24 @@ void exercise_1(string s1) {
 }
 
 void exercise_2(string s1) {
+    char word;
+    if (s1 == ""){
+        cout << "";
+    }
+    else{
+    cout << "[";
+        for(int i = 0; i < s1.size(); ++i){
+        if (s1[i] != ' '){
+            word = s1[i];
+            cout << word;
+        }
+        if (s1[i] == ' '){
+            cout << "]" << endl; 
+            cout << "[";
+        }
+    }
+    cout << "]" << endl;
+    }
 }
 
 void exercise_3(string s1) {
@@ -51,7 +69,61 @@ void exercise_4(int n) {
 }
 
 void exercise_5(int n, int k) {
-  // TODO: YOUR CODE HERE
+    string space1;
+    switch(n){
+        case 1:
+            space1 =  " "s;
+            break;
+        case 2:
+            space1 =  "  "s;
+            break;
+        case 3:
+            space1 =  "     "s;
+            break;
+        case 4:
+            space1 =  "        "s;
+            break;
+        case 5:
+            space1 =  "           "s;
+            break;
+        case 6:
+            space1 =  "              "s;
+            break;
+        case 7:
+            space1 =  "                 "s;
+            break;
+    }
+    
+    string _i;
+    for(int i = 1; i<=k; ++i){
+        int s = 20;
+        int r = 0;
+        while(r<=14){
+            if(space1.size()== s+(s*r) + r){
+                space1= space1 + '\n';
+                break;
+            }
+            ++r;
+        }
+        if(n==1 && space1.size()==1){
+            space1 = space1 + to_string(i);
+        }
+        else if(to_string(i).size()==1 && space1[space1.size()-1]!='\n'){
+            _i = "  " + to_string(i);
+            space1 = space1 + _i;
+        }else if(to_string(i).size()==1 && space1[space1.size()-1]=='\n'){
+            _i = " " + to_string(i);
+            space1 = space1 + _i;
+        
+        }else if(to_string(i).size()==2 && space1[space1.size()-1]!='\n'){
+            _i = " " + to_string(i);
+            space1 = space1 + _i;
+        }else if(to_string(i).size()==2 && space1[space1.size()-1]=='\n'){
+            space1 = space1 + to_string(i);
+        }
+        
+    }
+    cout << space1 << " " << endl;
 }
 
 int exercise_6(int n) {
@@ -75,7 +147,27 @@ void exercise_7(int n) {
 }
 
 void exercise_8(string s) {
-  // TODO: YOUR CODE HERE
+  int i;
+  string x, y, z;
+  for (int i=0; i<s.size(); i++){
+      x = s[i];
+      if (x==" "){
+          y = y;
+      }
+      else{
+      y = y + x;
+      }
+  }
+  for (int i=y.size()-1; i<y.size(); i--){
+      x = y[i];
+      z = z + x;
+  }
+  if (y==z){
+      cout<<"YES"<<endl;
+  }
+  else{
+      cout<<"NO"<<endl;
+  }
 }
 
 void exercise_9(string s) {
