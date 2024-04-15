@@ -236,7 +236,7 @@ long exercise_13(int n, int k) {
 string exercise_14(int n) {
     string x, i, u, t;
       x = to_string(n);
-        for (int i = x.size() ; i>=0; i--){
+        for (int i = x.size() -1 ; i>=0; i--){
           u = u + x[i];
     }
         if (x == u){
