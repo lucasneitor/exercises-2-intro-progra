@@ -194,7 +194,7 @@ for(int i = 1; i < s.size(); i++){
     } 
 }
 int exercise_10(int n, int n2) {
-   while (n2 == 0) {
+   while (n2 != 0) {
         int x = n2;
         n2 = n%n2;
         n = x;
