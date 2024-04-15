@@ -171,12 +171,35 @@ void exercise_8(string s) {
 }
 
 void exercise_9(string s) {
-  // TODO: YOUR CODE HERE
+int t = 0; 
+int count = 0;
+for(int i = 1; i < s.size(); i++){
+    switch(s[i]){
+        case 'f': t++; 
+    }
 }
-
-int exercise_10(int a, int b) {
-  // TODO: YOUR CODE HERE
-  return 0;
+    if(t <= 0){
+        cout << "-2" << endl;
+    }
+    else if(t == 1){
+        cout << "-1" << endl;
+    }
+    else if(t == 2){
+        for(int i = 0; i <= s.size(); ++i){
+        if (s[i] == 'f'){
+            count = i;
+            }
+        }
+            cout << count << endl;
+    } 
+}
+int exercise_10(int n, int n2) {
+   while (n2 == 0) {
+        int x = n2;
+        n2 = n%n2;
+        n = x;
+    }
+  return n;
 }
 
 void exercise_11() {
