@@ -92,8 +92,13 @@ void exercise_12() {
 }
 
 long exercise_13(int n, int k) {
-  // TODO: YOUR CODE HERE
-  return 0;
+  cin >> n;
+  cin >> k;
+  int r = 0;
+  for(int i = 1; i <= n; i++ ){
+    r += pow(i,k);
+  }
+  return r;
 }
 
 string exercise_14(int n) {
