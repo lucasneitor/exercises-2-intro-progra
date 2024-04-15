@@ -203,7 +203,13 @@ int exercise_10(int n, int n2) {
 }
 
 void exercise_11() {
-  // TODO: YOUR CODE HERE
+    double n = 1;
+      cout << "U0 = 1"<< endl;
+        for(int i=1; 10>=i; ++i){
+            double result = n/(i +1);
+                cout << "U" << i << " = " << n << endl;
+                n = result;
+    }
 }
 
 void exercise_12() {
