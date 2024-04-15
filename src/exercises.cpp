@@ -314,3 +314,4 @@ void exercise_18_19(int debut, int fin) {
         }
     }
 }
+//finnnnnnnnnn :-[
