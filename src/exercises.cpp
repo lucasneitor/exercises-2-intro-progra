@@ -213,7 +213,14 @@ void exercise_11() {
 }
 
 void exercise_12() {
-  // TODO: YOUR CODE HERE
+    double l = 1;
+      cout << "U" << l << " = " << l << " V" << l << " = " << l << endl;
+          for(int i = 1; i < 10; i++){
+            l = l / (i + 1);
+            int n;
+              n = i + 1;
+                cout << "U" << n << " = " << l << " V" << n << " = " << "1" << endl;
+    }
 }
 
 long exercise_13(int n, int k) {
