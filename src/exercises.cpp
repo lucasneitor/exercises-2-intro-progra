@@ -61,10 +61,11 @@ int exercise_6(int n) {
 }
 
 void exercise_7(int n) {
-  int number = 3;
-  double result;
+  cin >> n;
+  double result = 0;
   for(int i = 1; i <= n; i++){
-      result += pow( -1; i + 1) / i;
+    result += pow( -1, i+1)/i;
+
   }
   cout << result << endl;
 }
